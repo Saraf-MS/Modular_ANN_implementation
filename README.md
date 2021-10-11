@@ -6,6 +6,3 @@ ANN-Implementation in Modular Code fashion
 
 
 
-GDHFJNMVNSM,NV
-DJAGKSKGJDFGJA
-SGHSFLGKSJGSLGJ
