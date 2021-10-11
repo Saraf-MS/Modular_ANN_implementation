@@ -16,10 +16,12 @@ artifacts:
   model_name: model.h5
   plots_name: plot1.png
   
+  
 
 
 logs:
   logs_dir: logs_dir
   general_logs: general_logs
   tensorboard_logs: tensorboard_logs
+  tlog_name: tlog
 

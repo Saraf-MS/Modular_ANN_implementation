@@ -40,6 +40,14 @@ def save_plot(history ,plot_name , plots_dir):
     plt.show()
 
 
+def path_tensorboardlogs(tlog_name , logs_dir):
+    unique_filename = get_unique_filename(tlog_name)
+    path_to_log_file = os.path.join(logs_dir , unique_filename)
+    
+    return path_to_log_file
+    
+    
+
 
 
 
