@@ -1,4 +1,6 @@
 import tensorflow as tf
+import matplotlib.pyplot as plt
+import pandas as pd
 import time
 import os
 
@@ -28,7 +30,17 @@ def save_model(model, model_name, model_dir):
     path_to_model = os.path.join(model_dir, unique_filename)
     model.save(path_to_model)
 
-def save_plot():
+def save_plot(history ,plot_name , plots_dir):
+    unique_filename = get_unique_filename(plot_name)
+    pd.DataFrame(history.history).plot(figsize=(8, 5))
+    plt.grid(True)
+    plt.gca().set_ylim(0, 1)
+    plotPath = os.path.join(plots_dir, unique_filename)
+    plt.savefig(plotPath)
+    plt.show()
+
+
+
 
 
 
